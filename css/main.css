@@ -1,0 +1,278 @@
+/* General */
+body {
+  margin: 0px; /* Reset default browser margin */
+  font-family: 'Roboto Condensed', 'Open sans', sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+h1, h2 {
+  line-height: 1.2;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 500;
+  color: #3b3838;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #3b3838;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+hr {
+  border: 2px solid #7d97ad;
+  max-width: 100%;
+  width: 100%;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 1.188em;
+}
+
+.site-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.noselect {
+  -webkit-user-select: none;   /* Chrome all / Safari all */
+  -moz-user-select: none;      /* Firefox all */
+  -ms-user-select: none;       /* IE 10+ */
+  user-select: none;           /* Likely future */
+}
+
+/** Header **/
+.header-inner {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.header-text {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header-subtitle {
+  text-align: center;
+}
+
+.header-logo {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.header-logo img {
+  max-width: 200px;
+}
+
+/** Main **/
+.main-image {
+  width: 100%;
+  min-height: 443px;
+  position: relative;
+  background-image: url(../img/coding-1853305_1920.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.main-image-description {
+  width: 50%;
+  max-width: 200px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10%;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.main-quote-left {
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.main-quote-right {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 20px
+}
+
+.main-quote-text {
+  font-style: italic;
+}
+
+.main-quote-autor {
+  margin: 0;
+  font-size: 1.0em;
+}
+
+.featured-work {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured-work-title {
+  width: 100%;
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.featured-work-title h3 {
+  display: inline-block;
+  padding-left: 0.5em;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.project-item-inner {
+  background-color: #edeff2;
+  padding: 5px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.project-item-inner:hover {
+  background-color: #7d97ad;
+  color: white;
+}
+
+.project-item-description {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/** Footer **/
+.social-media-links {
+  font-size: 3em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.list-item {
+  display: inline-block;
+  margin: 5px;
+}
+
+.list-item:first-child {
+  margin-left: 0px;
+}
+
+.list-item:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.facebook-link {
+  color: #3b5998;
+}
+
+.twitter-link {
+  color: #1da1f2;
+}
+
+.linkedin-link {
+  color: #0077b5;
+}
+
+.github-link {
+  color: black;
+}
+
+/* Media Queries */
+@media screen and (min-width: 550px) {
+  .site-container {
+    margin: 10px;
+  }
+
+  .header-logo {
+    width: auto;
+    margin-left: 0px;
+  }
+
+  .header-text {
+    width: auto;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .header-title {
+    text-align: right;
+  }
+
+  .header-subtitle {
+    text-align: right;
+  }
+
+  .project-item {
+    width: 50%;
+  }
+
+  .social-media-links {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .site-container {
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-item {
+    width: 33.33%;
+  }
+}
